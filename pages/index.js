@@ -10,8 +10,8 @@ const index = ({images}) => {
     <div style={{display: 'flex',justifyContent:'center',alignItems:'center'}}>
     <div className={styles.container}>
         {
-        images.map((image, index) =>{
-            return (<ImageComponent src={image.data.thumbnail}></ImageComponent>)
+        images.map((image, idx) =>{
+            return (<ImageComponent key ={idx} src={image.data.thumbnail}></ImageComponent>)
         })
         }
     </div>
